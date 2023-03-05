@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import Greet from './Greet';
 import "./index.css";
-
-
-ReactDOM.render(
-<Greet/>,document.getElementById("root")
+const Container=ReactDOM.createRoot(document.getElementById('root'))
+Container.render( 
+    <Greet />
 )
